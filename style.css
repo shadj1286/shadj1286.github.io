@@ -80,7 +80,9 @@ nav a:hover {
     margin: 0 auto; /* To center the image */
 }
 
-
+.crousel1{
+    background-color: rgb(228, 228, 239);
+}
 footer {
     background-color: #4CAF50;
     color: #fff;

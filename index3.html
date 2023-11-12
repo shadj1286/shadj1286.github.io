@@ -4,18 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style2.css">
+    <link rel="import" href="./navigation.html">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 <body>
     <script>
-        $.get("navigation.html", function(data){
-            $("#nav").replaceWith(data);
-        });
-        </script>
-<div id="nav">
-Ooops! the navabr didn't loaded :(
-</div>
-<h2>This is the about page</h2>
+    $.get("navigation.html", function(data){
+        $("#nav").replaceWith(data);
+    });
+    </script>
+    <div id="nav">
+    Ooops! the navabr didn't loaded :(
+    </div>
+    This is the index 3 page 
 </body>
 </html>

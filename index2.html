@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style2.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body>
+    <script>
+        $.get("navigation.html", function(data){
+            $("#nav").replaceWith(data);
+        });
+        $.get("footer.html", function(data){
+            $("#footer").replaceWith(data);
+        });
+        </script>
+<div id="nav">
+Ooops! the navabr didn't loaded :(
+</div>
+<div class="main-1">
+<img src="static/images/main_slide.png" alt="main_slide">
+</div>
+<div class="main-2">
+    <div class="items item-1">
+        <h2>About us </h2>
+        <p>Welcome to the world of One
+            Shade Foundation, a visionary
+            endeavor brought to life by the
+            dedicated efforts of Tarique
+            Anwar Rahmani and our
+            diligent team. As NGO, we
+            wholeheartedly embrace our
+            mission to uplift the society.</p>
+    </div>
+    <div class="items"></div>
+    <div class="items"></div>
+</div>
+<div id="footer">
+    Wait! The footer is loading
+</div>
+</body>
+</html>

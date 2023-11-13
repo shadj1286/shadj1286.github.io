@@ -3,9 +3,12 @@
     padding: 0;
 }
 
-nav{
-    display:flex;
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital@0;1&family=Edu+TAS+Beginner&family=Poppins:wght@500&display=swap');
+
+nav {
+    display: flex;
 }
+
 .navbar>ul>a>li {
     list-style-type: none;
     padding-left: 15px;
@@ -17,22 +20,24 @@ nav{
     text-decoration: none;
     color: black;
 }
-.navbar a:hover{
+
+.navbar a:hover {
     background-color: rgb(167, 198, 65);
     border-radius: 25px;
     padding: 5px;
-    color:black
+    color: black
 }
-.navbar a.active{
+
+.navbar a.active {
     background-color: rgb(33, 10, 66);
     border-radius: 25px;
     padding: 5px;
-    color:black
+    color: black
 }
 
 .navbar>ul {
     margin-left: 60vw;
-    margin-top: 10px; 
+    margin-top: 10px;
     display: flex;
     justify-content: flex-end;
     font-size: 20px;
@@ -44,40 +49,100 @@ nav{
 
 .navbar {
     padding: 12px 15px;
-    background-color: rgb(103, 216, 80);
+    background-color: rgb(241, 231, 231);
     position: sticky;
-    top:0;
+    top: 0;
     z-index: 1;
-    border-radius: 20px;
+
 }
-.main-1{
+
+.main-1 {
     text-align: center;
     /* background-color: rgb(48, 231, 231); */
     background-color: rgb(1, 19, 1);
     margin: 10px;
     padding: 5px;
 }
-.main-1>img{
+
+.main-1>img {
     width: 80vw;
     height: 500px;
 }
-.main-2{
-    display: grid;
-    height: 50vw;
-    grid-template-columns: repeat(3,1fr);
-    background-color: rgb(48, 231, 231);
-    margin:10px;
+
+.main-2 {
+    background-color: rgb(241, 231, 231);
+    display: flex;
+    gap: 74px;
+    width: 80vw;
+    height: 350px;
+    margin: 20px 10vw 20px 10vw;
 }
-.item-1{
+
+.main-2 img {
+    margin: 25px;
+    height: 300px;
+    border-radius: 50%;
+    filter: blur(1px);
+}
+
+.about_text {
+    margin-top: 25px;
+    border-left: 3px solid black;
+    padding-right: 10px;
+} 
+.about_text h2{
+    display: inline;
+    font-size: 55px;
+    word-spacing: 10px;
+    margin-right: 10px;
+    font-family: 'Balsamiq Sans';
+}
+.about_text h2:first-child{
+    margin-left: 25px;
+}
+.about_text h2:nth-child(2){
+    color: forestgreen;
+    margin-left: 20px;
+}
+.about_text p{
+    font-size: 30px;
+    font-family: 'Balsamiq Sans';
+    margin-right: 15px;
+    margin-left: 10px;
+    color: rgb(56, 54, 54);
+}
+.main-3 {
+    display: grid;
+    height: 250px;
+    gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: rgb(48, 231, 231);
+    margin: 10px;
+}
+
+.items {
     background-color: rgb(118, 118, 166);
     padding: 5px;
+    font-style: italic;
+    border: 2px solid black;
+    box-sizing: content-box;
 }
-.footer{
+
+.item-1 {
+    font-style: italic;
+}
+
+li {
+    list-style-type: none;
+}
+
+.footer {
     background-color: black;
     color: white;
     padding: 20px;
     text-align: center;
 }
-.footer>p{
+
+.footer>p {
     padding: 2px;
 }
